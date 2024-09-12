@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мельник Софія Василівна, ІС-21, ЛР-2, Варіант 3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    table {
+        border-collapse: collapse;
+        border: 3px solid #000000;
+    }
+    
+    td, th {
+        border: 3px solid #000000;
+    }
+
+    td {
+        width: 150px;
+        text-align: center;
+        height: 20px;
+        vertical-align: middle;
+    }
+
+    td {
+        color: #000000;
+    }
+    
+    /* Встановлення кольорів для 1-го і 2-го рядків */
+    tr:nth-child(1) {
+        background-color: #338f8f;
+    }
+
+    tr:nth-child(2) {
+        background-color: #f5f533;
+    }
+    
+    /* Зміна кольорів при наведенні */
+    tr:nth-child(1):hover {
+        background-color: #f5f533;
+    }
+    
+    tr:nth-child(2):hover {
+        background-color: #338f8f;
+    }
+    </style>
+</head>
+<body>
+    
+    <!-- Завдання №1 -->
+    <table cellpadding="10">
+        <tr>
+            <td rowspan="2">Мельник</td>
+            <td>Софія</td>
+            <td colspan="2" rowspan="2">Василівна</td>
+        </tr>
+        <tr>
+            <td>ЛР-2</td>
+        </tr>
+        <tr>
+            <td>ІС-21</td>
+            <td></td>
+            <td>Варіант 3</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td colspan="2"> </td>
+        </tr>
+    </table>
+    
+    <!-- Завдання №2 -->
+    <h2>1 - за допомогою position</h2>
+    <div class="container position-based">
+        <div class="box yellow"></div>
+        <div class="box blue"></div>
+        <div class="box magenta"></div>
+    </div>
+
+    <h2>2 - за допомогою transform</h2>
+    <div class="container transform-based">
+        <div class="box yellow"></div>
+        <div class="box blue"></div>
+        <div class="box magenta"></div>
+    </div>
+      
+</body>
+</html>
